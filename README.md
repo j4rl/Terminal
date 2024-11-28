@@ -1,0 +1,2 @@
+# Terminal
+Terminalkommandon i Linux
