@@ -1,6 +1,6 @@
 # Terminalkommandon i Linux
 Här finns länkar till andra specifika kommandon:
-- [screen.md](./screen.md)
+- [screen](./screen.md)
 
 ## Tangentbordsgenvägar och Navigering
 Innan vi går igenom några vanliga kommandon, är här några tangentbordsgenvägar som är mycket användbara:
