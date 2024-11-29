@@ -11,6 +11,7 @@ Innan vi går igenom några vanliga kommandon, är här några tangentbordsgenv�
 - Ctrl + R: Söker efter ett kommando
 - Ctrl + D: Stänger terminalen
 - Man Command
+
 På Linux och Mac används `man`-kommandot för att visa manualen för ett kommando som kan köras i terminalen. Om du exempelvis vill veta mer om ls-kommandot kan du skriva:
 
 ```bash
@@ -21,6 +22,7 @@ Tyvärr finns inte `man` inkluderat om du använder Git Bash på Windows. Istäl
 ```bash
 ls --help
 ```
+
 Du kan använda piltangenterna eller page up och page down för att navigera. När du är klar, tryck q för att avsluta.
 
 ## Kommandot whoami
@@ -51,15 +53,17 @@ Att navigera i filsystemet är grundläggande. Här är några kommandon du bör
 |cd ..	                               |Byter till överordnad katalog                           |
 |cd -	                                 |Byter till föregående katalog                           |
 |find [sökväg] -name [filnamn]      	 |Hittar en fil eller katalog                             |
+
 Du kan kombinera flaggor för att korta kommandon. Exempel: `ls -l -a` kan skrivas som `ls -la`.
 
 ## Öppna Mappar eller Filer
 Kommandot för att öppna en fil eller mapp varierar beroende på OS:
 
-Mac: open [katalognamn]
-Windows: start [katalognamn]
-Linux: xdg-open [katalognamn]
-Exempelvis:
+Mac: `open [katalognamn]`
+Windows: `start [katalognamn]`
+Linux: `xdg-open [katalognamn]`
+
+### Exempelvis:
 
 ```bash
 open https://traversymedia.com
@@ -92,7 +96,7 @@ Symbolen > används för att styra utdata till en fil. Exempel:
 ```bash
 echo "Hej världen" > nyfil.txt
 ```
-Detta skapar en fil nyfil.txt och skriver texten "Hej världen" i den.
+Detta skapar en fil `nyfil.txt` och skriver texten `"Hej världen"` i den.
 
 ## Använd >> för att lägga till innehåll i en befintlig fil:
 
@@ -102,163 +106,178 @@ echo "Mer text" >> nyfil.txt
 ## Kommandot cat (concatenate)
 cat används för att visa innehållet i filer, skapa filer, och mer. Här är några exempel:
 
-Användning	Beskrivning
-cat [filnamn]	Visa innehållet i en fil
-cat [fil1] [fil2]	Visa innehållet i flera filer samtidigt
-cat > [filnamn]	Skapa en ny fil och börja skriva i den
-cat >> [filnamn]	Lägg till innehåll i en befintlig fil
-cat -n [filnamn]	Visa innehåll med radnummer
+|Användning	          |Beskrivning                             |
+|---------------------|----------------------------------------|
+|cat [filnamn]	      |Visa innehållet i en fil                |
+|cat [fil1] [fil2]	  |Visa innehållet i flera filer samtidigt |
+|cat > [filnamn]	    |Skapa en ny fil och börja skriva i den  |
+|cat >> [filnamn]	    |Lägg till innehåll i en befintlig fil   |
+|cat -n [filnamn]	    |Visa innehåll med radnummer             |
+
 Avsluta och spara med Ctrl + D när du skriver i en fil.
 
-Kommandot less
+## Kommandot less
 less används för att visa innehåll i en fil, likt cat, men låter dig bläddra upp och ner:
 
-bash
-Kopiera kod
+```bash
 less [filnamn]
+```
 Avsluta genom att trycka på q.
 
-Kommandot echo
+## Kommandot echo
 echo används för att visa meddelanden eller skriva till filer:
 
-bash
-Kopiera kod
+```bash
 echo "Hej världen"
-Skapa eller lägga till innehåll i en fil:
+```
+## Skapa eller lägga till innehåll i en fil:
 
-bash
-Kopiera kod
+```bash
 echo "Nytt innehåll" > nyfil.txt
 echo "Mer innehåll" >> nyfil.txt
-Kommandot nano
+```
+
+## Kommandot nano
 nano är en enkel textredigerare som finns på de flesta Linux- och Mac-system samt i Git Bash på Windows:
 
-bash
-Kopiera kod
+```bash
 nano [filnamn]
+```
 Avsluta genom att trycka Ctrl + X, följt av Y för att spara eller N för att inte spara.
 
-Kommandona head och tail
+## Kommandona head och tail
 
-Kommando	Beskrivning
-head [filnamn]	Visa de första 10 raderna i en fil
-head -n 5 [filnamn]	Visa de första 5 raderna
-tail [filnamn]	Visa de sista 10 raderna i en fil
-tail -n 5 [filnamn]	Visa de sista 5 raderna
-Kommandot grep
+|Kommando	             |Beskrivning                        |
+|----------------------|-----------------------------------|
+|head [filnamn]	       |Visa de första 10 raderna i en fil |
+|head -n 5 [filnamn]	 |Visa de första 5 raderna           |
+|tail [filnamn]	       |Visa de sista 10 raderna i en fil  |
+|tail -n 5 [filnamn]	 |Visa de sista 5 raderna            |
+
+## Kommandot grep
 grep används för att söka efter textmönster i filer:
 
-bash
-Kopiera kod
+```bash
 grep [sökterm] [filnamn]
+```
 Sök i flera filer:
 
-bash
-Kopiera kod
+```bash
 grep [sökterm] [fil1] [fil2]
-Kommandot find
+```
+## Kommandot find
 find används för att hitta filer och kataloger:
 
-Exempel	Beskrivning
-find [sökväg] -name [filnamn]	Hitta en specifik fil
-find . -name "file-*"	Hitta filer som matchar ett mönster
-find . -empty	Hitta tomma filer
-find . -name "file-*" -delete	Ta bort filer som matchar ett mönster
+|Exempel	                       |Beskrivning                           |
+|--------------------------------|--------------------------------------|
+|find [sökväg] -name [filnamn]	 |Hitta en specifik fil                 |
+|find . -name "file-*"	         |Hitta filer som matchar ett mönster   |
+|find . -empty	                 |Hitta tomma filer                     |
+|find . -name "file-*" -delete	 |Ta bort filer som matchar ett mönster |
 
-Piping
+## Piping
 Piping är ett sätt att omdirigera utdata från ett kommando till ett annat. Här är några exempel:
 
 Skapa 10 filer:
 
-bash
-Kopiera kod
+```bash
 touch file-{001..010}.txt
+```
 Hitta dessa filer och skriv resultatet till en ny fil:
 
-bash
-Kopiera kod
+```bash
 find . -name "file-0*" > output.txt
+```
 Visa innehållet i den nya filen:
 
-bash
-Kopiera kod
+```bash
 cat output.txt
-Skapa en Symbolisk Länk (Symlink)
+```
+## Skapa en Symbolisk Länk (Symlink)
 En symbolisk länk (symlink) är en genväg till en fil eller katalog.
 Skapa en symlink:
 
-bash
-Kopiera kod
+```bash
 ln -s [filnamn] [symlinknamn]
+```
 Ta bort en symlink:
 
-bash
-Kopiera kod
+```bash
 rm [symlinknamn]
+```
 På Windows, om du inte använder Git Bash, kan du skapa en symlink med:
 
-bash
-Kopiera kod
+```bash
 mklink [symlinknamn] [filnamn]
-Filkomprimering med tar
+```
+## Filkomprimering med tar
 Kommandot tar används för att skapa eller extrahera tarbollar (arkivfiler).
 
-Kommando	Beskrivning
-tar czvf [katalognamn].tar.gz [katalognamn]	Skapa en tarboll med gzip-komprimering
-tar tzvf [tarboll]	Visa innehållet i en tarboll
-tar xzvf [tarboll]	Extrahera en tarboll
+|Kommando	                                     |Beskrivning                            |
+|----------------------------------------------|---------------------------------------|
+|tar czvf [katalognamn].tar.gz [katalognamn]	 |Skapa en tarball med gzip-komprimering |
+|tar tzvf [tarboll]	                           |Visa innehållet i en tarball           |
+|tar xzvf [tarboll]	                           |Extrahera en tarball                   |
+
 Vanliga flaggor:
 
--c: Skapa ett arkiv
--x: Extrahera ett arkiv
--f: Använd ett filnamn för arkivet
--z: Komprimera eller dekomprimera med gzip
--v: Visa information under processen
-Kommandot history
+- -c: Skapa ett arkiv
+- -x: Extrahera ett arkiv
+- -f: Använd ett filnamn för arkivet
+- -z: Komprimera eller dekomprimera med gzip
+- -v: Visa information under processen
+
+## Kommandot history
 history visar en lista över tidigare körda kommandon.
 
-bash
-Kopiera kod
+```bash
 history
+```
 Du kan köra ett tidigare kommando direkt med !:
 
-bash
-Kopiera kod
+```bash
 !100
+```
 Detta kör kommandot som ligger på position 100 i historiken.
 
-Kommandot chmod
+### Kommandot chmod
 chmod används för att ändra fil- och katalogbehörigheter.
 
-Exempel	Beskrivning
-chmod 755 [fil]	Ger läs-, skriv- och körbehörighet till ägaren, och läs- och körbehörighet till andra.
-chmod 644 [fil]	Ger läs- och skrivbehörighet till ägaren, och endast läsbehörighet till andra.
-Kommandot chown
+|Exempel	         |Beskrivning                                                                            |
+|------------------|---------------------------------------------------------------------------------------|
+|chmod 755 [fil]	 |Ger läs-, skriv- och körbehörighet till ägaren, och läs- och körbehörighet till andra. |
+|chmod 644 [fil]	 |Ger läs- och skrivbehörighet till ägaren, och endast läsbehörighet till andra.         |
+
+## Kommandot chown
 chown ändrar ägaren av en fil eller katalog.
 
 Ändra ägare:
 
-bash
-Kopiera kod
+```bash
 chown [ny_ägare] [filnamn]
+```
 Ändra ägare och grupp:
 
-bash
-Kopiera kod
+```bash
 chown [ny_ägare]:[ny_grupp] [filnamn]
-Fler Användbara Kommandon
+```
 
-Kommando	Beskrivning
-df -h	Visa diskutrymme i läsbart format
-du -sh [katalog]	Visa storlek av en katalog
-ps aux	Lista alla körande processer
-kill [process-ID]	Avsluta en process
-wget [URL]	Ladda ner en fil från en URL
-curl [URL]	Hämta data från en URL
-Kommandon för Nätverk
+## Fler Användbara Kommandon
 
-Kommando	Beskrivning
-ping [adress]	Testa anslutning till en adress
-ifconfig	Visa nätverkskonfiguration
-netstat -tuln	Visa öppna portar
-ssh [användare]@[server]	Anslut till en server via SSH
+|Kommando	           |Beskrivning                       |
+|--------------------|----------------------------------|
+|df -h	             |Visa diskutrymme i läsbart format |
+|du -sh [katalog]	   |Visa storlek av en katalog        |
+|ps aux	             |Lista alla körande processer      |
+|kill [process-ID]	 |Avsluta en process                |
+|wget [URL]	         |Ladda ner en fil från en URL      |
+|curl [URL]	         |Hämta data från en URL            |
+
+## Kommandon för Nätverk
+
+|Kommando	                  |Beskrivning                     |
+|---------------------------|--------------------------------|
+|ping [adress]	            |Testa anslutning till en adress |
+|ifconfig	                  |Visa nätverkskonfiguration      |
+|netstat -tuln	            |Visa öppna portar               |
+|ssh [användare]@[server]	  |Anslut till en server via SSH   |
