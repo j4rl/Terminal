@@ -1,7 +1,7 @@
 # Terminalkommandon i Linux
 Här finns länkar till andra specifika kommandon:
 - [screen](./screen.md)
-- [Uppgift 1](./Uppgift_1)
+- [Uppgift 1](./uppgift1.md)
 
 ## Tangentbordsgenvägar och Navigering
 Innan vi går igenom några vanliga kommandon, är här några tangentbordsgenvägar som är mycket användbara:
