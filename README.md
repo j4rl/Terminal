@@ -2,6 +2,10 @@
 Här finns länkar till andra specifika kommandon:
 - [screen](./screen.md)
 - [Uppgift 1](./uppgift1.md)
+- [Uppgift 2](./uppgift2.md)
+- [Uppgift 3](./uppgift3.md)
+- [Uppgift 4](./uppgift4.md)
+- [Extra Linux-kommandon](./extra_kommandon.md)
 
 ## Tangentbordsgenvägar och Navigering
 Innan vi går igenom några vanliga kommandon, är här några tangentbordsgenvägar som är mycket användbara:

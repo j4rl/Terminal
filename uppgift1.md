@@ -61,3 +61,27 @@ ls -R ~
 - Rensa Temp-mappen regelbundet: Ta bort gamla filer för att hålla det rent.
 - Anpassa strukturen efter dina behov: Lägg till fler mappar om du behöver fler kategorier.
 
+---
+
+## Enkelt sätt att redovisa
+Skriv ett kort dokument med dina egna ord. Det behöver inte vara lång eller formellt. Skriv bara det som passar dig.
+
+### Gör så här:
+1. Titel: "Uppgift 1 – Grundläggande Linux-kommandon"
+2. Skriv vad du gjorde
+3. Lista de kommandon du använde
+4. Skriv kort vad resultatet blev
+5. Skriv din egen insikt: vad lärde du dig och vad var svårt eller enkelt?
+
+### Exempel
+```text
+Jag lärde mig att använda pwd, ls och cd för att navigera i Linux. Jag skapade mappar och tittade på filer i hemkatalogen. Det var lätt att se hur katalogerna hängde ihop. Min viktigaste insikt var att terminalen är ett snabbt sätt att arbeta med filer och att man måste vara noggrann med var man befinner sig i systemet.
+```
+
+## Inlämning
+Lämna in:
+- kort text om vad du gjorde
+- kommandon du använde
+- din personliga reflektion
+- ett kort resultat från terminalen
+
