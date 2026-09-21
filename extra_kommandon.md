@@ -64,7 +64,7 @@ sudo apt install lynx
 Starta:
 
 ```bash
-lynx https://www.example.com
+lynx https://charlie.j4rl.com
 ```
 
 Navigera med:
